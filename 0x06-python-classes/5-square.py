@@ -15,7 +15,7 @@ class Square:
     def my_print(self):
         """print the square with #"""
         if self.__size == 0:
-            print("\n")
+            print()
         else:
             for side in range(self.__size):
                 print("{}".format(self.__size * "#"))
