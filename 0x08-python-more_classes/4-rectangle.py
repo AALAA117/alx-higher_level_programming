@@ -52,11 +52,12 @@ class Rectangle:
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            return (" ")
+            return ("")
         else:
             rec = ""
             for i in range(self.__height):
                 rec += "#" * self.__width + "\n"
-                if i == self.__height - 1:
-                    rec += "#" * self.__width
-            return (rec)
+            return (rec[:-1])
+
+    def __repr__(self):
+        return ("Rectangle(2, 4)")
