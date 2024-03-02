@@ -22,8 +22,8 @@ def matrix_divided(matrix, div):
     for index, row in enumerate(matrix):
         for i in range(len(row)):
             if type(row[i]) is not int and type(row[i]) is not float:
-                raise TypeError("matrix must be a matrix\
-                        (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix "
+                                "(list of lists) of integers/floats")
             else:
                 new_matrix[index][i] = round(matrix[index][i] / div, 2)
     return (new_matrix)
