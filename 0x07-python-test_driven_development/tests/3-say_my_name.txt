@@ -9,6 +9,9 @@ My name is Smith
 >>> say_my_name(float('nan'), "Smith")
 Traceback (most recent call last):
 TypeError: first_name must be a string
+>>> say_my_name("Bob", 12)
+Traceback (most recent call last):
+TypeError: last_name must be a string
 >>> say_my_name(float('inf'), "Smith")
 Traceback (most recent call last):
 TypeError: first_name must be a string
