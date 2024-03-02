@@ -1,0 +1,30 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("John", "Smith")
+My name is John Smith
+>>> say_my_name(12, "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> say_my_name("Smith")
+My name is Smith 
+>>> say_my_name(float('nan'), "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> say_my_name(float('inf'), "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> say_my_name(None)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+>>> say_my_name(str("2"), "Smith")
+My name is 2 Smith
+>>> say_my_name(str(float('inf')), "Smith")
+My name is inf Smith
+>>> say_my_name(str(float('nan')), "Smith")
+My name is nan Smith
+>>> say_my_name(str(None), "Smith")
+My name is None Smith
+>>> say_my_name(str(2.5), "Smith")
+My name is 2.5 Smith
