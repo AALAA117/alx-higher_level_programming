@@ -13,7 +13,6 @@ if not os.path.exists(filename):
     loaded_data.extend(sys.argv[1:])
     save_to_json_file(loaded_data, filename)
 else:
-    with open(filename) as f:
-        loaded_data = load_from_json_file(filename)
-        loaded_data.extend(sys.argv[1:])
-        save_to_json_file(loaded_data, filename)
+    loaded_data = load_from_json_file(filename)
+    loaded_data.extend(sys.argv[1:])
+    save_to_json_file(loaded_data, filename)
