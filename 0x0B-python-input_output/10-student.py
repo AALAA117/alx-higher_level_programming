@@ -18,4 +18,4 @@ class Student:
                     dic[key] = getattr(self, key, None)
             return (dic)
         else:
-            return (self.__dict__)
+            return (type(self.__dict__))
