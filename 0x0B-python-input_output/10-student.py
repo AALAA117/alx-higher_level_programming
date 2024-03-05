@@ -17,5 +17,7 @@ class Student:
                 if hasattr(self, key):
                     dic[key] = getattr(self, key, None)
             return (dic)
+        if atrrs == []:
+            return (self)
         else:
-            return (type(self.__dict__))
+            return (self.__dict__)
