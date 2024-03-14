@@ -11,8 +11,8 @@ class Square:
     def set_size(self, size):
         """set size"""
         if size != int(size):
-            print("{}".format("size must be an integer"))
+            raise TypeError("{}".format("size must be an integer"))
         elif size < 0:
-            print("{}".format("size must be >= 0"))
+            raise ValueError("{}".format("size must be >= 0"))
         else:
             self.__size = size
