@@ -4,7 +4,7 @@
 
 class Square:
     """define area method"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         """get size"""
         self.set_size(size)
 
