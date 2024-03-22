@@ -52,6 +52,12 @@ class Rectangle(Base):
             rep += "#" * self.__width + "\n"
         print((rep[:-1]))
 
+    def __str__(self):
+        """return a string represntation when using print"""
+        return ('[Rectangle] ({}) {}/{} - {}/{}'.
+                format(self.id, self.__x, self.__y, self.__width,
+                       self.__height))
+
     @property
     def x(self):
         """get x"""
