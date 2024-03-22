@@ -45,6 +45,13 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
+    def display(self):
+        """prints in stdout the Rectangle instance with the character #"""
+        rep = ""
+        for h in range(self.__height):
+            rep += "#" * self.__width + "\n"
+        print((rep[:-1]))
+
     @property
     def x(self):
         """get x"""
