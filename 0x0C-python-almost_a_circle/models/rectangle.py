@@ -49,7 +49,9 @@ class Rectangle(Base):
         """prints in stdout the Rectangle instance with the character #"""
         rep = ""
         for h in range(self.__height):
-            rep += "#" * self.__width + "\n"
+            rep += " " * self.__x + "#" * self.__width + "\n"
+        for step in range(self.__y):
+            print()
         print((rep[:-1]))
 
     def __str__(self):
