@@ -13,6 +13,12 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def update(self, *args):
+        """update arguments of class rectangle"""
+        list_t = ["id", "width", "height", "x", "y"]
+        for i in range(len(args)):
+            setattr(self, list_t[i], args[i])
+
     def area(self):
         """get area of rectangle"""
         return (self.__width * self.__height)
