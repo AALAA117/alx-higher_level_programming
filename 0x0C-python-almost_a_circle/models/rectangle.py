@@ -13,11 +13,13 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update arguments of class rectangle"""
         list_t = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
             setattr(self, list_t[i], args[i])
+        for key, value in kwargs.items():
+            setattr(self, str(key), value)
 
     def area(self):
         """get area of rectangle"""
