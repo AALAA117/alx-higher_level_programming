@@ -11,7 +11,7 @@ class Square(Rectangle):
         self.size = size
         self.x = x
         self.y = y
-        super().__init__(size, size, x, y, id)
+        super().__init__(self.__size, self.__size, x, y, id)
 
     def update(self, *args, **kwargs):
         """update arguments of class square"""
