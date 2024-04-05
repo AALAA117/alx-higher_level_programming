@@ -4,7 +4,7 @@ import unittest
 from models.rectangle import Rectangle
 
 
-class TestBase(unittest.TestCase):
+class TestRectangle(unittest.TestCase):
     """test rectangle_model"""
     def setUp(self):
         self.obj1 = Rectangle(3, 2)
