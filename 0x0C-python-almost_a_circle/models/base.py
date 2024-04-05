@@ -31,6 +31,12 @@ class Base:
             return (json.loads(json_string))
 
     @classmethod
+    def create(cls, **dictionary):
+        dummy_ins = cls(1, 2, 2)
+        dummy_ins.update(**dictionary)
+        return (dummy_ins)
+
+    @classmethod
     def save_to_file(cls, list_objs):
         filename = "{}.json".format(cls.__name__)
         with open(filename, "w", encoding='utf-8') as f:
