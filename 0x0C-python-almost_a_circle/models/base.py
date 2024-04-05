@@ -32,7 +32,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        dummy_ins = cls(1, 2, 2)
+        dummy_ins = cls(**dictionary)
         dummy_ins.update(**dictionary)
         return (dummy_ins)
 
