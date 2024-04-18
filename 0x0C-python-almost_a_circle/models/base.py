@@ -45,3 +45,14 @@ class Base:
                 f.write(cls.to_json_string(list_t))
             else:
                 f.write(cls.to_json_string(list_objs))
+
+    @classmethod
+    def load_from_file(cls):
+        filename = "{}.json".format(cls.__name__)
+        try:
+            with open(filename, "r", encoding='utf-8') as f:
+                list_output = cls.from_json_string(f.read())
+                list_of_ins = [cls.create(**a_dict) for a_dict in list_output]
+            return (list_of_ins)
+        except Exception as e:
+            return ([])
