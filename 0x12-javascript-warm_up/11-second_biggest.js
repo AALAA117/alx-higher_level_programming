@@ -5,16 +5,14 @@ let secondLargest = -Infinity;
 if (numOfArg === 1 || numOfArg === 0) {
   console.log(0);
 } else {
-  const lastIndex = numOfArg - 1;
-  for (let i = 0; i < numOfArg; i++) {
-    for (let k = 3; k < lastIndex; k++) {
-      if (process.argv[k] > largest) {
-        secondLargest = largest;
-        largest = process.argv[k];
-      } else if (process.argv[k] > secondLargest && process.argv[k] < largest) {
-        secondLargest = process.argv[k];
-      }
+  const lastIndex = process.argv.length - 1;
+  for (let k = 3; k <= lastIndex; k++) {
+    if (process.argv[k] > largest) {
+      secondLargest = largest;
+      largest = process.argv[k];
+    } else if (process.argv[k] > secondLargest && process.argv[k] < largest) {
+      secondLargest = process.argv[k];
     }
   }
+  console.log(secondLargest);
 }
-console.log(secondLargest);
