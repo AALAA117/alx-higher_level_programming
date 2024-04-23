@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const numOfArg = process.argv.length - 2;
-let largest = process.argv[2];
+let largest = eval(process.argv[2]);
 let secondLargest = -Infinity;
 if (numOfArg === 1 || numOfArg === 0) {
   console.log(0);
