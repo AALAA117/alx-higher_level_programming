@@ -11,8 +11,10 @@ if __name__ == "__main__":
             db=argv[3]
             )
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name='{}'
-                ORDER BY states.id".format(argv[4]))
+    cur.execute("""
+    SELECT * FROM states WHERE name = '{}'
+    ORDER BY states.id
+    """.format(argv[4]))
     results = cur.fetchall()
     for row in results:
         print(row)
