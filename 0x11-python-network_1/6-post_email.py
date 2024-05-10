@@ -10,4 +10,4 @@ if __name__ == "__main__":
     url = argv[1]
     querystring = {"email": argv[2]}
     respond = requests.post(url, querystring)
-    print(respond.content)
+    print(respond.text)
