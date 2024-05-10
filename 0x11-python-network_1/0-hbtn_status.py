@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for sending requests using urllib"""
+"""
+Python script that fetches https://alx-intranet.hbtn.io/status
+"""
 from urllib.request import urlopen
 
 if __name__ == "__main__":
