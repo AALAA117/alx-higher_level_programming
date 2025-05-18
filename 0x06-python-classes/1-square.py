@@ -6,7 +6,7 @@ Square Module
 
 class Square:
     """
-    Square
+    Square class carry info about square object
     """
 
     def __init__(self, size):
