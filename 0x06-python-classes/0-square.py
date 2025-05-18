@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
 Square Module
 """
@@ -6,6 +6,6 @@ Square Module
 
 class Square:
     """
-    Square
+    Square carry info of square object
     """
     pass
