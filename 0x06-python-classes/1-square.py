@@ -1,9 +1,17 @@
-#!/usr/bin/python3
-"""Module for size of square"""
+
+#!/bin/usr/python3
+"""
+Square Module
+"""
 
 
-class Square():
-    """Define size of square"""
+class Square:
+    """
+    Square
+    """
+
     def __init__(self, size):
-        """get size of square"""
+        """
+        Initialization of square
+        """
         self.__size = size
