@@ -1,7 +1,11 @@
-#!/usr/bin/python3
-"""Module for an empty class"""
+#!/bin/usr/python3
+"""
+Square Module
+"""
 
 
 class Square:
-    """Empty class"""
+    """
+    Square
+    """
     pass
